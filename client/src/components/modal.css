@@ -1,0 +1,148 @@
+.modal-container {
+    margin: 0 auto;
+    padding-top: 60px;
+    position: relative;
+    width: 160px;
+}
+
+
+.modal-container .modal-backdrop {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.2s ease-in;
+}
+
+.modal-container #modal-toggle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.modal-container #modal-toggle:checked {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    opacity: 0;
+}
+
+.modal-container #modal-toggle:checked~.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    pointer-events: none;
+    opacity: 1;
+}
+
+.modal-container #modal-toggle:checked~.modal-backdrop .modal-content {
+    background-color: #fff;
+    max-width: 650px;
+    padding: 10px 30px;
+    position: absolute;
+    left: calc(50% - 300px);
+    top: 1%;
+    border-radius: 4px;
+    z-index: 999;
+    pointer-events: auto;
+    cursor: auto;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+}
+
+.modal-container #modal-toggle:checked~.modal-backdrop .modal-content .modal_info {
+    margin: 15px;
+}
+
+.modal-container .modal-backdrop .modal-content h4 {
+    padding: 5px;
+    color: #333;
+}
+
+.modal-container .modal-backdrop .modal-content .to_modal span {
+    color: #3e2093;
+    padding-right: 3px;
+}
+
+.modal-container #modal-toggle:checked~.modal-backdrop .modal-content .modal-close {
+    color: #666;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    padding-top: 7px;
+    background: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.modal-container #modal-toggle:checked~.modal-backdrop .modal-content .modal-close:hover {
+    color: #333;
+}
+
+.modal-container .modal-backdrop button {
+    display: block;
+    color: #fff;
+    width: 130px;
+    height: 30px;
+    background: #00cccc;
+    font-size: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.modal-container .modal-backdrop button:hover {
+    background: black;
+    color: #fff;
+}
+
+.modal-container .modal-backdrop .to_modal {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.modal-container .modal-backdrop .to_modal a {
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: black;
+}
+
+.modal-container .modal-backdrop .to_modal a:hover {
+    background-color: black;
+    color: #fff;
+}
+
+#transactions-data {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#transactions-data p {
+    padding: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+
+#transactions-data span {
+    color: #3e2093;
+    padding-right: 3px;
+}

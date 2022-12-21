@@ -17,7 +17,10 @@ const onSubmit=async(e)=>{
 
   return (
     <div>
-        <input type="file" name="" id="" onChange={(e)=>onSubmit(e)} />
+        {/* <input type="file" name="" id="" onChange={(e)=>onSubmit(e)} /> */}
+        <h1>
+          Current metamask account is not Authorized
+        </h1>
     </div>
   )
 }

@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+
+/* User.js */
+/* Inspector.js */
+.siderbarOption .navSide h2 {
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.siderbarOption ul {
+    list-style-type: none;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.siderbarOption li a {
+    display: block;
+    color: #000;
+    padding: 15px 30px;
+    text-decoration: none;
+}
+
+.siderbarOption li a:hover {
+    background-color: lightcyan;
+    color: black;
+    border-radius: 10px;
+}
+
+.siderbarOption .navSide {
+    margin-top: 40px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid #e6ecf0;
+    border-radius: 10px;
+    padding: 10px;
+    background: #E4E9F7;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+
+/* Users.js */
+.users_div {
+    display: block;
+    margin: 30px 50px;
+    padding: 10px;
+}
+
+.users_div h1 {
+    width: 30%;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    background-color: #00cccc;
+    text-align: center;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* .users_div a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3px;
+} */
+
+.users_div #users_table {
+    border-collapse: collapse;
+    border-radius: 0.5em;
+    overflow: hidden;
+    border-spacing: 0;
+    outline: 1px solid #30305b;
+}
+
+.users_div #users_table th, td {
+    text-align: center;
+    padding: 15px;
+}
+
+.users_div #users_table th {
+    background-color: #00cccc;
+    color: white;
+}
+
+.users_div #users_table td {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 15px 20px;
+    position: relative;
+    transition: all 300ms;
+}
+
+.users_div #users_table tbody:hover td {
+    color: transparent;
+    text-shadow: 0 0 3px #aaa;
+}
+
+.users_div #users_table tbody:hover tr:hover td {
+    color: #444;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.users_div button {
+    background-color: transparent;
+    padding: 0 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    transition: transform .2s;
+}
+
+.users_div button:hover {
+    transform: scale(1.1);
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+
+/* UserNav.js */
+.navBar {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    margin: 20px 60px 20px 60px;
+    padding: 8px;
+    border-radius: 5px;
+    background: #E4E9F7;
+}
+
+.navBar:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navBar h3 {
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+.navBar span {
+    color: #00cccc;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+
+/* Requests.js */
+.requests_div {
+    display: block;
+    margin: 30px 50px;
+    padding: 10px;
+}
+
+.requests_div h1 {
+    width: 30%;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    background-color: #00cccc;
+    text-align: center;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.requests_div #requests_table {
+    border-collapse: collapse;
+    border-radius: 0.5em;
+    overflow: hidden;
+    border-spacing: 0;
+    outline: 1px solid #30305b;
+}
+
+.requests_div #requests_table th, td {
+    text-align: center;
+    padding: 15px;
+}
+
+.requests_div #requests_table th {
+    background-color: #00cccc;
+    color: white;
+}
+
+.requests_div #requests_table td {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 15px 20px;
+    position: relative;
+    transition: all 300ms;
+}
+
+.requests_div #requests_table tbody:hover td {
+    color: transparent;
+    text-shadow: 0 0 3px #aaa;
+}
+
+.requests_div #requests_table tbody:hover tr:hover td {
+    color: #444;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.requests_div button {
+    background-color: transparent;
+    padding: 0 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    transition: transform .2s;
+}
+
+.requests_div button:hover {
+    transform: scale(1.2);
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+
+/* AllLands.js */
+.all_lands_div {
+    display: block;
+    margin: 30px 50px;
+    padding: 10px;
+}
+
+.all_lands_div h1 {
+    width: 30%;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    background-color: #00cccc;
+    text-align: center;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* .all_lands_div a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3px;
+} */
+
+.all_lands_div button {
+    background-color: transparent;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+}
+
+.all_lands_div #all_lands_table {
+    border-collapse: collapse;
+    border-radius: 0.5em;
+    overflow: hidden;
+    border-spacing: 0;
+    outline: 1px solid #30305b;
+}
+
+.all_lands_div #all_lands_table th, td {
+    text-align: center;
+    padding: 15px;
+}
+
+.all_lands_div #all_lands_table th {
+    background-color: #00cccc;
+    color: white;
+}
+
+.all_lands_div #all_lands_table td {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 15px 20px;
+    position: relative;
+    transition: all 300ms;
+}
+
+.all_lands_div #all_lands_table tbody:hover td {
+    color: transparent;
+    text-shadow: 0 0 3px #aaa;
+}
+
+.all_lands_div #all_lands_table tbody:hover tr:hover td {
+    color: #444;
+    text-shadow: 0 1px 0 #fff;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------- */
+
+/* AddLand.js */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+::-webkit-file-upload-button {
+    display: none;
+}
+
+.wrapper {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.container .title {
+    font-size: 35px;
+    font-weight: 600;
+    background-color: #00cccc;
+    text-align: center;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.content form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0 5px 0;
+}
+
+form .user-details .input-box {
+    margin-bottom: 10px;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details input:focus {
+    border-color: #00cccc;
+}
+
+.user-details input[type="file"] {
+    cursor: pointer;
+}
+
+.supp_docs {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.supp_docs input:focus {
+    border-color: #00cccc;
+}
+
+.supp_docs span {
+    color: #bfbfbf;
+    font-size: 17px;
+}

@@ -1,0 +1,165 @@
+.navBar_inspect {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    margin: 20px 60px 20px 60px;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+    background: #E4E9F7;
+}
+
+.navBar_inspect:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navBar_inspect h3 {
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+
+/* ApprovedRequests.js */
+.approved_div {
+    display: block;
+    margin: 30px 50px;
+    padding: 10px;
+}
+
+.approved_div #approved_req {
+    border-collapse: collapse;
+    border-radius: 0.5em;
+    overflow: hidden;
+    border-spacing: 0;
+    outline: 1px solid #30305b;
+}
+
+.approved_div #approved_req th, td {
+    text-align: center;
+    padding: 15px;
+}
+
+.approved_div #approved_req th {
+    background-color: #00cccc;
+    color: white;
+}
+
+.approved_div #approved_req td {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 15px 20px;
+    position: relative;
+    transition: all 300ms;
+}
+
+.approved_div #approved_req tbody:hover td {
+    color: transparent;
+    text-shadow: 0 0 3px #aaa;
+}
+
+.approved_div #approved_req tbody:hover tr:hover td {
+    color: #444;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.approved_div #approved_req button {
+    background-color: transparent;
+    padding: 0 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    transition: transform .2s;
+}
+
+.approved_div #approved_req button:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------- */
+
+/* AddUser.js */
+
+.container_land {
+    margin-top: 30px;
+}
+
+.wrapper_addUser {
+    margin: auto;
+    width: 450px;
+    padding: 10px 70px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.wrapper_addUser h1 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    background-color: #00cccc;
+    text-align: center;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.wrapper_addUser form {
+    margin: 20px 0;
+}
+
+form input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    margin: 10px 0;
+    padding: 10px 25px;
+    font-size: 18px;
+    background: none;
+    caret-color: #00cccc;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+    border-bottom-width: 2px;
+    transition: all 0.2s ease;
+}
+
+form input::placeholder {
+    color: #bfbfbf;
+    font-size: 17px;
+    text-align: center;
+}
+
+form input:focus {
+    border-color: #00cccc;
+}
+
+form input:focus::placeholder {
+    color: transparent;
+}
+
+form input[type="submit"] {
+    height: 50px;
+    margin-top: 15px;
+    color: #fff;
+    padding: 0;
+    border: none;
+    background: #00cccc;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+form input[type="submit"]:hover {
+    background: #262626;
+}
+
+form input[type="text"], form input[type="number"] {
+    font-size: 17px;
+    text-align: center;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
